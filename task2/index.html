@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div>
+<h2>new database</h2>
+<form action="newdb.php">
+	<input type="submit" value="New DB" />
+</form>
+</div>
+<div>
+<h2>show</h2>
+<form action="show.php">
+	<input type="submit" value="Show" />
+</form>
+</div>
+<div>
+<h2>new post</h2>
+<form action="newpost.php" method="post">
+	<label for="title">Title: </label>
+	<input type="text" name="title" placeholder="Type a title.."/><br>
+	<label for="description">Description: </label>
+	<input type="text" name="description" placeholder="Type a description.." /><br>
+	<input type="submit" value="Create" />
+</form>
+</div>
+<div>
+<h2>delete post</h2>
+
+<form action="delpost.php" method="post">
+	<label for="postid">ID: </label>
+	<input type="text" name="postid" placeholder="Post ID to be deleted.." /><br>
+	<input type="submit" value="Delete" />
+</form>
+</div>
+<div>
+<h2>update post</h2>
+<form action="updatepost.php" method="post">
+	<label for="postid">ID: </label>
+	<input type="text" name="postid" placeholder="ID of the post to update.." /><br>
+	<label for="title">Title: </label>
+	<input type="text" name="title" placeholder="Type a title.." /><br>
+	<label for="title">Description: </label>
+	<input type="text" name="description" placeholder="Type a description.." /><br>
+	<input type="submit" value="Update" />
+</form>
+</div>
+</body>
+</html>
